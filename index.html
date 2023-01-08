@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+      function alertbutton() {
+        var naam = $("#naam").val();
+        var favoboek = $("#favoboek").val();
+        var favofilm = $("#favofilm").val();
+        window.alert("Ik ben " + naam + " en mijn favoriete boek is " + favoboek + " en mijn favriete film is " + favofilm + ".");
+      }
+    </script>
+  </head>
+  <body>
+    <form class="" action="index.html" method="post">
+        <fieldset>
+          <legend>Persoonlijke gegevens</legend>
+          <label for="naam">Naam</label>
+          <input id="naam" type="text" name="naam" value=""><br><br>
+
+          <label for="favoboek">Favoriete boek</label>
+          <input id="favoboek" type="text" name="favoboek" value=""><br><br>
+
+          <label for="favofilm">Favoriete film</label>
+          <input id="favofilm" type="text" name="favofilm" value="">
+        </fieldset>
+    </form>
+
+    <button id="alertbutton" type="button" name="button" onclick="alertbutton()">Alert!</button>
+      
+  </body>
+</html>
+Footer
